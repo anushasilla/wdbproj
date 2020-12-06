@@ -3,29 +3,29 @@
     width: 393.93px;
     height: 709.83px;
     left: 162px;
-    top: 172px;
+    top: 100px;
 }
 
 #background-vector {
     position: absolute;
     width: 947px;
-    height: 1025px;
+    height: 100%;
     right: 0px;
     top: 0px;
 }
 
 #background-ellipse {
     position: absolute;
-    width: 905px;
-    height: 905px;
+    width: 800px;
+    height: 800px;
     right: 0px;
-    top: 86px;
+    top: 10px;
 }
 
 #form-background {
     position: absolute;
     width: 580px;
     height: 616px;
-    right: 125px;
-    top: 215px;
+    right: 85px;
+    top: 100px;
 }
