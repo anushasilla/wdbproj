@@ -1,0 +1,31 @@
+#location-graphic {
+    position: absolute;
+    width: 393.93px;
+    height: 709.83px;
+    left: 162px;
+    top: 172px;
+}
+
+#background-vector {
+    position: absolute;
+    width: 947px;
+    height: 1025px;
+    right: 0px;
+    top: 0px;
+}
+
+#background-ellipse {
+    position: absolute;
+    width: 905px;
+    height: 905px;
+    right: 0px;
+    top: 86px;
+}
+
+#form-background {
+    position: absolute;
+    width: 580px;
+    height: 616px;
+    right: 125px;
+    top: 215px;
+}
