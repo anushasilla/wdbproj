@@ -1,14 +1,14 @@
 #location-graphic {
     position: absolute;
     width: 393.93px;
-    height: 709.83px;
-    left: 162px;
-    top: 100px;
+    height: 680px;
+    left: 280px;
+    top: 70px;
 }
 
 #background-vector {
     position: absolute;
-    width: 947px;
+    width: 1000px;
     height: 100%;
     right: 0px;
     top: 0px;
@@ -28,4 +28,21 @@
     height: 616px;
     right: 85px;
     top: 100px;
+}
+
+h1 {
+    position: absolute;
+    width: 483px;
+    height: 180px;
+    left: 150px;
+    top: 250px;
+
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 90px;
+
+    color: #000000;
+
 }
