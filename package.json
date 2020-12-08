@@ -2,7 +2,7 @@
   "name": "wdbfinal",
   "version": "1.0.0",
   "description": "",
-  "main": "website.js",
+  "main": "server.js",
   "dependencies": {
     "axios": "^0.21.0",
     "babel-core": "^6.26.3",
@@ -19,7 +19,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd daycation/public && npm start"
   },
   "repository": {
     "type": "git",
