@@ -12,11 +12,14 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static('/Users/anushee22/Desktop/wdbfinal/forserver'));
 
 http://localhost:8080/home?user_location=&user_time=night&user_people=friends
 router.route('/home')
     .get((req, res) => {
-        res.sendFile('/Users/anushee22/Desktop/wdbfinal/landing.html')});
+        res.sendFile('/Users/anushee22/Desktop/wdbfinal/forserver/landing.html');
+    })
+
 
 
 router.route('/activitysearch')
@@ -60,12 +63,12 @@ router.route('/activitysearch/:todo_id')
         res.json({ message: 'Delete a todo.' });
     })
 
-if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
-        app.use(express.static('/Users/anushee22/Desktop/wdbfinal/daycation/public'));
-
-        app.get((req, res) => {
-            res.sendFile('/Users/anushee22/Desktop/wdbfinal/daycation/public/index.html')});
-};
+// if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
+//         app.use(express.static('/Users/anushee22/Desktop/wdbfinal/daycation/public'));
+//
+//         app.get((req, res) => {
+//             res.sendFile('/Users/anushee22/Desktop/wdbfinal/daycation/public/landing.html')});
+// };
 
 
 
