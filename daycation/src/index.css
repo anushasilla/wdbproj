@@ -29,6 +29,11 @@ body {
   top: 214px;
 }
 
+#background-graphic {
+  position: absolute;
+  top: 400px;
+}
+
 #search {
   position: absolute;
   width: 904px;
