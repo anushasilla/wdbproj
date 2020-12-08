@@ -3,9 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landing.css">
-    <title>Explorer</title>
+    <title>Daycation</title>
 </head>
 <body>
+    <!--LANDING PAGE-->
     <img id="location-graphic" src="assets/location-path-graphic.png">
     <img id="background-vector" src="assets/background-shape.png">
     <img id="background-ellipse" src="assets/background-ellipse.png">
@@ -44,6 +45,25 @@
                     <option value="solo">Solo</option>
                 </select>
             </li>
+            <li>
+                <div class="activity-row">
+                    <!--<input type="button" class="activity-item" name="food">-->
+                    <input type="checkbox" id="food">
+                    <label for="food" class="activity-item">food</label>
+                    <input type="checkbox" id="chill">
+                    <label for="chill" class="activity-item">chill</label>
+                    <input type="checkbox" id="shop">
+                    <label for="shop" class="activity-item">shop</label>
+                </div>
+                <div class="activity-row">
+                    <input type="checkbox" id="active">
+                    <label for="active" class="activity-item">active</label>
+                    <input type="checkbox" id="fun">
+                    <label for="fun" class="activity-item">fun</label>
+                    <input type="checkbox" id="nature">
+                    <label for="nature" class="activity-item">nature</label>
+                </div>
+            </li>
             <li class="button">
                 <button type="submit">Search</button>
               </li>
@@ -52,5 +72,9 @@
     <style>
         select:invalid { color:gray; }
     </style>
+
+
+    <!--LANDING PAGE CONTINUED-->
+
 </body>
 </html>

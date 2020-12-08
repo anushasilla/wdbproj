@@ -109,3 +109,32 @@ button {
     border: none;
     color: white;
 }
+
+.activity-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.activity-item {
+    font-size: 15px;
+    line-height: 2;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    display: none;
+}
+
+input[type=checkbox]:checked + .activity-item {
+    background-color: #E3908B;
+    color: white;
+}
