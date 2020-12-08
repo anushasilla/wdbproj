@@ -45,7 +45,7 @@ class ActivityCard extends React.Component {
         return (
             <div>
               <div className="card">
-                <img src={this.props.image} className="image"></img>
+                <img src={require('./images/bigC.jpg')} className="image"></img>
                 <div className="information">
                     <div className="activity-name">{this.props.name}</div>
                     <div className="subtitle">
@@ -66,8 +66,7 @@ class ActivityCard extends React.Component {
 
 function App() {
   return (
-    <ActivityCard name="Big C" image="assets/big-c.jpg" category="chill" location="Berkeley" description="Activity description goes here.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend vitae dui ut et al bibendum vitae. Lorem ipsum dolor sit"/>
+    <ActivityCard name="Caffe Strada" category="Food" location="South Side" description="Popular among students, this tree-shaded cafe provides a kick with coffe drinks, teas, and pastries"/>
 
   );
 }
