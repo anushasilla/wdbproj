@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <title>Daycation</title>
+</head>
+<body>
+    <!--LANDING PAGE-->
+    <img id="location-graphic" src="assets/location-path-graphic.png">
+    <img id="background-vector" src="assets/background-shape.png">
+    <img id="background-ellipse" src="assets/background-ellipse.png">
+    <img id="form-background" src="assets/form-background.png">
+
+    <h1>
+        Start Planning <br> Your Day
+    </h1>
+
+    <h3>
+        Where do you want to go?
+    </h3>
+
+    <form action="" method="">
+        <ul>
+            <li>
+              <input type="text" id="location" name="user_location" placeholder="Location">
+            </li>
+            <li>
+              <select id="time" name="user_time" required>
+                <option value="" disabled selected>Time of Day</option>
+                  <option value="morning">Morning</option>
+                  <option value="mid-day">Mid-day</option>
+                  <option value="afternoon">Afternoon</option>
+                  <option value="evening">Evening</option>
+                  <option value="night">Night</option>
+              </select>
+            </li>
+            <li>
+                <select id="people" name="user_people" required>
+                    <option value="" disabled selected>Who's Coming</option>
+                    <option value="date">Date</option>
+                    <option value="family">Family</option>
+                    <option value="friends">Friends</option>
+                    <option value="pets">Pets</option>
+                    <option value="solo">Solo</option>
+                </select>
+            </li>
+            <li>
+                <div class="activity-row">
+                    <!--<input type="button" class="activity-item" name="food">-->
+                    <input type="checkbox" id="food">
+                    <label for="food" class="activity-item">Food</label>
+                    <input type="checkbox" id="chill">
+                    <label for="chill" class="activity-item">Chill</label>
+                    <input type="checkbox" id="shop">
+                    <label for="shop" class="activity-item">Shop</label>
+                </div>
+                <div class="activity-row">
+                    <input type="checkbox" id="active">
+                    <label for="active" class="activity-item">Active</label>
+                    <input type="checkbox" id="fun">
+                    <label for="fun" class="activity-item">Fun</label>
+                    <input type="checkbox" id="nature">
+                    <label for="nature" class="activity-item">Nature</label>
+                </div>
+            </li>
+            <li class="button">
+                <button type="submit">Search</button>
+              </li>
+           </ul>
+    </form>
+    <style>
+        select:invalid { color:gray; }
+    </style>
+</body>
+</html>
