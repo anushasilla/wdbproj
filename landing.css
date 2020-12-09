@@ -1,0 +1,145 @@
+#logo {
+    margin-left: 20px;
+}
+
+#location-graphic {
+    position: absolute;
+    width: 393.93px;
+    height: 680px;
+    left: 280px;
+    top: 80px;
+}
+
+#background-vector {
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+}
+
+#background-ellipse {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    right: 0px;
+    top: 3%;
+}
+
+#form-background {
+    position: absolute;
+    width: 530px;
+    height: 560px;
+    right: 100px;
+    top: 18%;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+h1 {
+    position: absolute;
+    width: 483px;
+    height: 180px;
+    left: 150px;
+    top: 260px;
+
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    color: #000000;
+}
+
+h3 {
+    position: absolute;
+    right: 180px;
+    top: 23%;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+form {
+    position: absolute;
+    right: 11%;
+    top: 34%;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 3.2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input, 
+select {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font-size: 18px;
+  font-family: Inter;
+
+  /* Uniform text field size */
+  height: 38px;
+  width: 370px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #5295BA;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+button {
+    width: 370px;
+    height: 40px;
+    font-size: 18px;
+    font-family: Inter;
+    border-radius: 20px;
+    background-color: #5295BA;
+    border: none;
+    color: white;
+}
+
+.activity-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.activity-item {
+    font-size: 15px;
+    line-height: 2;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    display: none;
+}
+
+input[type=checkbox]:checked + .activity-item {
+    background-color: #E3908B;
+    color: white;
+}
