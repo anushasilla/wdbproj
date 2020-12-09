@@ -20,25 +20,25 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static('/Users/anushee22/Desktop/wdbfinal/forserver'));
 
-router.route('/activity')
-    .get((req, res) => {
-        res.json({message: 'bruh'});
-    })
 //http://localhost:8080/home?user_location=&user_time=night&user_people=friends
-router.route('/')
+router.route('/home')
     .get((req, res) => {
         res.sendFile('/Users/anushee22/Desktop/wdbfinal/forserver/landing.html');
     })
 
+router.route('/home?')
+    .get((req, res) => {
+        res.json({message: 'bruh'});
+    })
 
 
-// app.get("/users/:id/state/:state", (req, res) => {
-//     if (req.params.state== 'Published') {
-//         //do somehting
-//     } else {
-//         //do something
-//     }
-// });
+app.get("/users/:id/state/:state", (req, res) => {
+    if (req.params.state== 'Published') {
+        //do somehting
+    } else {
+        //do something
+    }
+});
 
 
 
