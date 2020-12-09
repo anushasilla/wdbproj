@@ -1,9 +1,13 @@
+#logo {
+    margin-left: 20px;
+}
+
 #location-graphic {
     position: absolute;
     width: 393.93px;
     height: 680px;
     left: 280px;
-    top: 70px;
+    top: 80px;
 }
 
 #background-vector {
@@ -40,7 +44,7 @@ h1 {
     width: 483px;
     height: 180px;
     left: 150px;
-    top: 250px;
+    top: 260px;
 
     font-family: Inter;
     font-size: 64px;
