@@ -62,12 +62,30 @@ class ActivityCard extends React.Component {
     }
 }
 
+class ActivityColumn extends React.Component {
+  renderCard() {
+    return (
+      <ActivityCard />
+    )
+  }
+
+  render () {
+
+    return (
+      <div className="card-column">
+        <ActivityCard className="activity-card" name="Caffe Strada" category="Food" location="South Side" description="Popular among students, this tree-shaded cafe provides a kick with coffe drinks, teas, and pastries"/>
+        <ActivityCard className="activity-card" name="Berkeley Rose Garden" category="Food" location="South Side" description="Popular among students, this tree-shaded cafe provides a kick with coffe drinks, teas, and pastries"/>
+      </div>
+    )
+  }
+}
+
 // ====================================================
 
 function App() {
   return (
-    <ActivityCard name="Caffe Strada" category="Food" location="South Side" description="Popular among students, this tree-shaded cafe provides a kick with coffe drinks, teas, and pastries"/>
-
+    //<ActivityCard name="Caffe Strada" category="Food" location="South Side" description="Popular among students, this tree-shaded cafe provides a kick with coffe drinks, teas, and pastries"/>,
+    <ActivityColumn />
   );
 }
 
