@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="activities.css">
+    <title>Activity Search</title>
+  </head>
+  <body>
+      <div class="sticky-header">
+      <img src="assets/Logo.png" id="logo">
+    <form>
+      <input type="text" id="search" name="search-bar" placeholder="Search activities">
+      <ul>
+        <li>
+          <input type="text" id="location" name="user_location" placeholder="Location">
+        </li>
+        <li>
+          <select id="time" name="user_time" required>
+            <option value="" disabled selected>Time of Day</option>
+              <option value="morning">Morning</option>
+              <option value="mid-day">Mid-day</option>
+              <option value="afternoon">Afternoon</option>
+              <option value="evening">Evening</option>
+              <option value="night">Night</option>
+          </select>
+        </li>
+        <li>
+            <select id="people" name="user_people" required>
+                <option value="" disabled selected>Who's Coming</option>
+                <option value="date">Date</option>
+                <option value="family">Family</option>
+                <option value="friends">Friends</option>
+                <option value="pets">Pets</option>
+                <option value="solo">Solo</option>
+            </select>
+        </li>
+      </ul>
+    </form>
+
+    <h3>Recommended Activities</h3>
+    </div>
+
+    <div class="activity-row">
+        <input type="checkbox" id="food">
+        <label for="food" class="activity-item">Food</label>
+        <input type="checkbox" id="chill">
+        <label for="chill" class="activity-item">Chill</label>
+        <input type="checkbox" id="shop">
+        <label for="shop" class="activity-item">Shop</label>
+        <input type="checkbox" id="active">
+        <label for="active" class="activity-item">Active</label>
+        <input type="checkbox" id="fun">
+        <label for="fun" class="activity-item">Fun</label>
+        <input type="checkbox" id="nature">
+        <label for="nature" class="activity-item">Nature</label>
+    </div>
+
+    <img src="assets/Map.png" id="map">
+    <img src="assets/Paths.png" id="background-graphic">
+
+    <div class="cards-column">
+        <div class="card">
+            <img src="assets/strada.png" class="image">
+            <div class="information">
+                <h4 class="activity-name">Caffe Strada</h4>
+                <div class="subtitle">
+                    <div class="category">Food</div>
+                    <div class="location">South Side</div>
+                </div>
+                <img src="assets/Ratings.png" class="ratings">
+                <div class="description">
+                    Popular among students, this tree-shaded cafe provides a kick with coffe drinks, teas, and pastries
+                </div>
+                <div class="see-details">See details</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/rosegarden.png" class="image">
+            <div class="information">
+                <h4 class="activity-name">Berkeley Rose Garden</h4>
+                <div class="subtitle">
+                    <div class="category">Nature</div>
+                    <div class="location">North Berkeley</div>
+                </div>
+                <img src="assets/Ratings.png" class="ratings">
+                <div class="description">
+                    The Berkeley Rose Garden is a city-owned park in the North Berkeley area of Berkeley, California. The Rose Garden is situated in a residential area of the Berkeley Hills between the Cragmont ...
+                </div>
+                <div class="see-details">See details</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/ucha.png" class="image">
+            <div class="information">
+                <h4 class="activity-name">U-cha</h4>
+                <div class="subtitle">
+                    <div class="category">Food</div>
+                    <div class="location">Downtown Berkeley</div>
+                </div>
+                <img src="assets/Ratings.png" class="ratings">
+                <div class="description">
+                    Chill counter in a simple modern storefront for iced & bubble tea drinks with creative snacks.
+                </div>
+                <div class="see-details">See details</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/marina.png" class="image">
+            <div class="information">
+                <h4 class="activity-name">Berkeley Marina</h4>
+                <div class="subtitle">
+                    <div class="category">Nature</div>
+                    <div class="location">West Berkeley</div>
+                </div>
+                <img src="assets/Ratings.png" class="ratings">
+                <div class="description">
+                    The Berkeley Marina is the westernmost portion of the city of Berkeley, California, located west of the Eastshore Freeway at the foot of University Avenue on San Francisco Bay.
+                </div>
+                <div class="see-details">See details</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/gypsys.png" class="image">
+            <div class="information">
+                <h4 class="activity-name">Gypsy's Trattoria Italiana</h4>
+                <div class="subtitle">
+                    <div class="category">Food</div>
+                    <div class="location">South Side</div>
+                </div>
+                <img src="assets/Ratings.png" class="ratings">
+                <div class="description">
+                    Fast-food outfit with late hours provides Italian comfort dishes to a student-heavy clientele.
+                </div>
+                <div class="see-details">See details</div>
+            </div>
+        </div>
+
+    </div>
+  </body>
+</html>
