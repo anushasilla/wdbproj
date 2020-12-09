@@ -23,13 +23,22 @@
     <form action="" method="">
         <ul>
             <li>
-              <input type="text" id="location" name="user_location" placeholder="Location">
+              <!--<input type="text" id="location" name="user_location" placeholder="Location">-->
+              <select id="location" name="user_location" required>
+                <option value="" disabled selected>Location</option>
+                  <option value="northberk">North Berkeley</option>
+                  <option value="southberk">South Side</option>
+                  <option value="eastberk">East Berkeley</option>
+                  <option value="eastberk">West Berkeley</option>
+                  <option value="downtownberk">Downtown Berkeley</option>
+                  <option value="berkcampus">UC Berkeley Campus</option>
+              </select>
             </li>
             <li>
               <select id="time" name="user_time" required>
                 <option value="" disabled selected>Time of Day</option>
                   <option value="morning">Morning</option>
-                  <option value="mid-day">Mid-day</option>
+                  <option value="mid-day">Mid-Day</option>
                   <option value="afternoon">Afternoon</option>
                   <option value="evening">Evening</option>
                   <option value="night">Night</option>

@@ -6,15 +6,15 @@ var port = process.env.PORT || 8080;
 
 var router = express.Router();
 
-const bodyParser = require('body-parser');
+const fs = require('fs');
 
-//const activities_list = require('./data/activities.js');
+const bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static('/Users/anushee22/Desktop/wdbfinal/forserver'));
 
-http://localhost:8080/home?user_location=&user_time=night&user_people=friends
+//http://localhost:8080/home?user_location=&user_time=night&user_people=friends
 router.route('/home')
     .get((req, res) => {
         res.sendFile('/Users/anushee22/Desktop/wdbfinal/forserver/landing.html');
@@ -22,10 +22,19 @@ router.route('/home')
 
 
 
-router.route('/activitysearch')
+router.route('/home?user_location=&user_time=night&user_people=friends')
   .get((req, res) => {
     res.json({ message: 'Suggested activities.'});
   })
+
+var _ = require("underscore");
+
+//let activities = fs.readFileSync('/Users/anushee22/Desktop/wdbfinal/activities.JSON');
+var users = JSON.parse(fs.readFileSync('/Users/anushee22/Desktop/wdbfinal/activities.JSON'));
+//
+// var filtered = _.where(users, {user: "a"});
+
+// => [{user: "a", age: 20}]
 
 
 // All HTTP methods under the /activitysearch/:activity_name URL.
@@ -62,13 +71,6 @@ router.route('/activitysearch/:todo_id')
     .delete((req, res) => {
         res.json({ message: 'Delete a todo.' });
     })
-
-// if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
-//         app.use(express.static('/Users/anushee22/Desktop/wdbfinal/daycation/public'));
-//
-//         app.get((req, res) => {
-//             res.sendFile('/Users/anushee22/Desktop/wdbfinal/daycation/public/landing.html')});
-// };
 
 
 
